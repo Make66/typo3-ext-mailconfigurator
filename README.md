@@ -1,6 +1,7 @@
 # typo3-ext-mailconfigurator
 
 Original author: Jonathan Heilmann
+
 Current maintainer: Martin Keller <martin.keller@taketool.de>
 
 ## What for?

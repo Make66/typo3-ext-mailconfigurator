@@ -1,5 +1,5 @@
 {
-    "name": "jonathanheilmann/jh_mail_configurator",
+    "name": "taketool/jh_mail_configurator",
     "type": "typo3-cms-extension",
     "description": "Temporarily change mail configuration to use another mailer than configured in install tool.\nIncludes a validator to validate and test new mail configuration",
     "authors": [
