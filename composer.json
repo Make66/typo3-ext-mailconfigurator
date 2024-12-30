@@ -22,7 +22,7 @@
         }
     },
     "replace": {
-        "jh_mail_configurator": "self.version",
+        "taketool/jh_mail_configurator": "self.version",
         "typo3-ter/jh-mail-configurator": "self.version"
     },
     "extra": {
