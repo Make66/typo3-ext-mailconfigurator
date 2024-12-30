@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-02-21T13:20:23Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+        <trans-unit id="tx_jhmailconfigurator_domain_model_mailconfiguration">
+            <source>Mail Configuration</source>
+        </trans-unit>
+		<trans-unit id="tx_jhmailconfigurator_domain_model_mailconfiguration.smtp_encrypt">
+            <source>SMTP Encrypt (Connect to the server using the specified transport protocol. Requires openssl library. Usually available: ssl, sslv2, sslv3, tls)</source>
+        </trans-unit>
+        <trans-unit id="tx_jhmailconfigurator_domain_model_mailconfiguration.smtp_password">
+            <source>SMTP Password</source>
+        </trans-unit>
+        <trans-unit id="tx_jhmailconfigurator_domain_model_mailconfiguration.smtp_server">
+            <source>SMTP Server (mail.your-server.de:25)</source>
+        </trans-unit>
+        <trans-unit id="tx_jhmailconfigurator_domain_model_mailconfiguration.smtp_username">
+            <source>SMTP Username</source>
+        </trans-unit>
+		</body>
+	</file>
+</xliff>

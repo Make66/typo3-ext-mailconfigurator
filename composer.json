@@ -1,0 +1,33 @@
+{
+    "name": "jonathanheilmann/jh_mail_configurator",
+    "type": "typo3-cms-extension",
+    "description": "Temporarily change mail configuration to use another mailer than configured in install tool.\nIncludes a validator to validate and test new mail configuration",
+    "authors": [
+        {
+            "name": "Jonathan Heilmann",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^10.4 || ^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "JonathanHeilmann\\JhMailConfigurator\\": "Classes"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JonathanHeilmann\\JhMailConfigurator\\Tests\\": "Tests"
+        }
+    },
+    "replace": {
+        "jh_mail_configurator": "self.version",
+        "typo3-ter/jh-mail-configurator": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "jh_mail_configurator"
+        }
+    }
+}
