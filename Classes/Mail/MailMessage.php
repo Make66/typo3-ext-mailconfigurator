@@ -1,6 +1,7 @@
 <?php
 namespace JonathanHeilmann\JhMailConfigurator\Mail;
 
+use Symfony\Component\Mailer\Exception\TransportException;
 use TYPO3\CMS\Core\Mail\Mailer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
@@ -30,13 +31,16 @@ class MailMessage extends \TYPO3\CMS\Core\Mail\MailMessage
      */
     public function testMailer()
     {
-        $this->mailer = GeneralUtility::makeInstance(Mailer::class);
+        $mailer = GeneralUtility::makeInstance(Mailer::class);
         try {
-            $transport = $this->mailer->getTransport();
-            $transport->start();
-            $transport->stop();
+            $testMessage = new \TYPO3\CMS\Core\Mail\MailMessage();
+            $testMessage->setFrom('test@example.com');
+            $testMessage->setTo('test@example.com');
+            $testMessage->setSubject('Test');
+            $testMessage->text('Test');
+            $mailer->send($testMessage);
             return true;
-        } catch (\Swift_TransportException $e) {
+        } catch (TransportException $e) {
             return $e->getMessage();
         } catch (\Exception $e) {
             return $e->getMessage();
