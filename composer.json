@@ -6,6 +6,10 @@
         {
             "name": "Jonathan Heilmann",
             "role": "Developer"
+        },
+        {
+            "name": "Martin Keller",
+            "role": "Maintainer"
         }
     ],
     "require": {
